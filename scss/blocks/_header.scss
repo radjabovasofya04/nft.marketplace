@@ -1,0 +1,37 @@
+.header {
+    padding: 20px 50px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 35;
+    background-color: $main-dark;
+    justify-content: space-between;
+    align-items: center;
+    .header_menu {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        gap: 50px;
+        li {
+            a {
+                text-decoration: none;
+                font-weight: 600;
+                color: #fff;
+                transition: 0.3s all;
+                &:hover {
+                    transition: 0.3s all;
+                    color: $main-purple;
+                }
+            }
+            .header_btn {
+                padding: 19px 30px;
+                @include fill-btn-style;
+            }
+        }
+    }
+    .header_burger {
+        display: none;
+    }
+}

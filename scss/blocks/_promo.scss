@@ -1,0 +1,73 @@
+.promo {
+    width: 100%;
+    .promo_items {
+        width: 100%;
+        padding: 80px 0;
+        // display: flex;
+        align-items: start;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        .promo_info {
+            // max-width: 510px;
+            .promo_title {
+                font-size: 67px;
+                font-weight: 600;
+                line-height: 110%;
+                text-transform: capitalize;
+                color: #fff;
+            }
+            .promo_subtitle {
+                @include subtitle-style;
+                margin-top: 20px;
+            }
+            .promo_btn {
+                @include fill-btn-style;
+                padding: 19px 50px;
+                margin-top: 30px;
+            }
+            .promo_static {
+                width: 100%;
+                display: flex;
+                color: #fff;
+                gap: 50px;
+                margin-top: 30px;
+                .static_item {
+                    .item_value {
+                        font-size: 28px;
+                        font-weight: 700;
+                        font-family: 'Space Mono', monospace;
+                    }
+                    .item_title {
+                        font-size: 24px;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+        .promo_card {
+            // max-width: 510px;
+            background-color: $main-gray;
+            border-radius: 20px;
+            .card_img {
+                width: 100%;
+            }
+            .card_text {
+                padding: 20px;
+                color: #fff;
+                .card_title {
+                    font-size: 22px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                }
+                .card_owner {
+                    @include owner-style;
+                }
+            }
+            @include up-animation;
+        }
+        .promo_small_info {
+            display: none;
+        }
+    }
+}

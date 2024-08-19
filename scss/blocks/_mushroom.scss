@@ -1,0 +1,73 @@
+.mushroom {
+    background: linear-gradient(
+        180deg,
+        rgba(162, 89, 255, 0),
+        rgb(162, 89, 255) 100%
+    ), url('../img/mushroom-bg.png') center center/cover no-repeat;
+    width: 100%;
+    .mushroom_items {
+        width: 100%;
+        padding-top: 360px;
+        padding-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        .mushroom_content {
+            .mushroom_owner {
+                @include owner-style;
+                display: inline-flex;
+                color: #fff;
+                padding: 10px 20px;
+                background-color: $main-dark;
+                border-radius: 20px;
+            }
+            .mushroom_title {
+                margin: 0;
+                margin-top: 30px;
+                font-size: 51px;
+                font-weight: 600;
+                color: #fff;
+            }
+            .mushroom_btn {
+                margin-top: 30px;
+                @include fill-btn-style;
+                background-color: #fff;
+                border-color: #fff;
+                color: $main-purple;
+                padding: 19px 50px;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+        .mushroom_time {
+            background: #3B3B3B80;
+            padding: 30px;
+            border-radius: 20px;
+            font-family: "Space Mono", monospace;
+            color: #fff;
+            .time_title {
+                font-size: 12px;
+            }
+            .time_content {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-top: 10px;
+                font-size: 28px;
+                font-weight: 700;
+                .time_item {
+                    .time_num {
+                        font-size: 38px;
+                    }
+                    .time_name {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .mushroom_small_btn {
+            display: none;
+        }
+    }
+}

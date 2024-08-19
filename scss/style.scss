@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+// font-family: "Space Mono", monospace;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+body {
+    background-color: #2b2b2b;
+}
+
+.container {
+    max-width: 1050px;
+    padding: 0;
+}
+
+// Base
+@import './base/variables';
+@import './base/mixins';
+
+// Blocks
+@import './blocks/header';
+@import './blocks/promo';
+@import './blocks/collection';
+@import './blocks/creators';
+@import './blocks/discover';
+@import './blocks/categories';
+@import './blocks/mushroom';
+@import './blocks/works';
+@import './blocks/join';
+@import './blocks/footer';
+
+// Base media
+@import './base/media';

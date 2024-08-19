@@ -1,0 +1,68 @@
+.creators {
+    width: 100%;
+    .creators_items {
+        width: 100%;
+        padding: 80px 0;
+        .creators_header {
+           @include heading-style;
+        }
+        .creators_content {
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 30px;
+            .creators_item {
+                border-radius: 20px;
+                background-color: $main-gray;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                @include up-animation;
+                .item_num {
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 100%;
+                    background-color: $main-dark;
+                    color: #858584;
+                    font-family: "Space Mono", monospace;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    left: 20px;
+                    top: 18px;
+                }
+                .item_text {
+                    width: 100%;
+                    margin-top: 20px;
+                    .item_title {
+                        color: #fff;
+                        font-size: 22px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        text-align: center;
+                    }
+                    .item_info {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        .info_title {
+                            color: #858584;
+                        }
+                        .info_value {
+                            font-family: "Space Mono", monospace;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .creators_small_btn {
+            display: none;
+        }
+    }
+
+}

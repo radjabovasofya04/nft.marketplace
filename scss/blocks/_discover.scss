@@ -1,0 +1,60 @@
+.discover {
+    width: 100%;
+    .discover_items {
+        width: 100%;
+        padding: 80px 0;
+        .discover_header {
+            width: 100%;
+            @include heading-style;
+        }
+        .discover_content {
+            // display: flex;
+            // justify-content: space-between;
+            // align-items: start;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+            .discover_item {
+                border-radius: 20px;
+                background-color: $main-gray;
+                @include up-animation;
+                .item_img {
+                    width: 100%;
+                }
+                .item_text {
+                    padding: 20px 30px 25px 30px;
+                    .item_title {
+                        font-size: 22px;
+                        font-weight: 600;
+                        color: #fff;
+                    }
+                    .item_owner {
+                        @include owner-style;
+                        color: #fff;
+                        margin-top: 5px;
+                    }
+                    .item_info {
+                        margin-top: 25px;
+                        display: flex;
+                        justify-content: space-between;
+                        font-family: "Space Mono", monospace;
+                        .info_title {
+                            font-size: 12px;
+                            color: #858584;
+                        }
+                        .info_value {
+                            color: #fff;
+                        }
+                    }
+                    .right {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        .discover_small_btn {
+            display: none;
+        }
+    }
+}
